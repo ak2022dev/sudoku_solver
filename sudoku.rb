@@ -1,3 +1,22 @@
+#
+# From Flanagaan and Matsumoto
+# 
+# This module defines a Sudoku::Puzzle class to represent a 9x9
+# Sudoku puzzle and also defines exception classes raised for
+# invalid input and over-constrained puzzles. This module also defines
+# the method Sudoku.solve to solve a puzzle. The solve method uses
+# the Sudoku.scan method, which is also defined here.
+#
+# Use this module to solve Sudoku puzzles with code like this:
+#
+# require 'sudoku'
+# put Sudoku.solve(Sudoku::Puzzle.new(ARGF.readlines))
+# ...
+# Create a new puzzle with Sudoku::Puzzle.new, specifying the initial
+# state as a string or as an array of strings. The string(s) should use
+# the characters 1 through 9 for the given values, and '.' for cells
+# whose value is unspecificied. Whitespace in the input is ignored.
+
 module Sudoku
 
   class Puzzle
