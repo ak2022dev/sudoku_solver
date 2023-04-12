@@ -68,8 +68,8 @@ module Sudoku
     ].freeze
 
     def each_unknown
-      0.updo 8 do |row|
-        0.updo 8 do |col|
+      0.upto 8 do |row|
+        0.upto 8 do |col|
           index = row*9+col
           next if @grid[index] != 0
           box = BoxOfIndex[index]
