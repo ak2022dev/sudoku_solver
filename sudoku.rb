@@ -1,5 +1,5 @@
 #
-# From Flanagaan and Matsumoto
+# From Flanagan and Matsumoto
 # 
 # This module defines a Sudoku::Puzzle class to represent a 9x9
 # Sudoku puzzle and also defines exception classes raised for
